@@ -1,40 +1,40 @@
 // Lista de heróis (usando laço de repetição)
-let herois = [
-    { nome: "Arthas", xp: 500 },
-    { nome: "Luna", xp: 1500 },
-    { nome: "Kael", xp: 3500 },
-    { nome: "Mira", xp: 6500 },
-    { nome: "Drako", xp: 8200 },
-    { nome: "Zed", xp: 9500 },
-    { nome: "Astra", xp: 12000 }
+let heroes = [
+    { nickname: "kaka", xp: 500 },
+    { nickname: "dai", xp: 1500 },
+    { nickname: "lira", xp: 3500 },
+    { nickname: "Mira", xp: 6500 },
+    { nickname: "mario", xp: 8200 },
+    { nickname: "Zeldris", xp: 9500 },
+    { nickname: "Asta", xp: 12000 }
 ];
 
 // Laço para percorrer todos os heróis
-for (let i = 0; i < herois.length; i++) {
+for (let i = 0; i < heroes.length; i++) {
 
-    let nome = herois[i].nome;
-    let xp = herois[i].xp;
-    let nivel = "";
+    let nickname = heroes[i].nickname;
+    let xp = heroes[i].xp;
+    let level = "";
 
     // Estrutura de decisão
     if (xp < 1000) {
-        nivel = "Ferro";
+        level = "Iron";
     } else if (xp >= 1001 && xp <= 2000) {
-        nivel = "Bronze";
+        level = "Bronze";
     } else if (xp >= 2001 && xp <= 5000) {
-        nivel = "Prata";
+        level = "Silver";
     } else if (xp >= 5001 && xp <= 7000) {
-        nivel = "Ouro";
+        level = "Gold";
     } else if (xp >= 7001 && xp <= 8000) {
-        nivel = "Platina";
+        level = "Platinum";
     } else if (xp >= 8001 && xp <= 9000) {
-        nivel = "Ascendente";
+        level = "Ascending";
     } else if (xp >= 9001 && xp <= 10000) {
-        nivel = "Imortal";
+        level = "Immortal";
     } else {
-        nivel = "Radiante";
+        level = "Radiant";
     }
 
     // Saída
-    console.log("O Herói de nome " + nome + " está no nível de " + nivel);
+    console.log("The Hero of the Name " + nickname + " is at the level " + level);
 }
